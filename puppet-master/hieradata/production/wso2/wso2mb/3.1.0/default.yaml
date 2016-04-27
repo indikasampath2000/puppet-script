@@ -77,12 +77,12 @@ wso2::hosts_mapping :
     hostname : local.mb.wso2.com
 
 wso2::clustering :
-    #enabled : true
-    #local_member_host : "%{::ipaddress}"
-    #domain : wso2.mb.domain
-    #local_member_port : 4000
-    #membership_scheme : wka
-    #sub_domain : mgt
+    enabled : true
+    local_member_host : "%{::ipaddress}"
+    domain : wso2.mb.domain
+    local_member_port : 5701
+    membership_scheme : aws
+    sub_domain : mgt
     #wka :
     #   members :
     #     -
