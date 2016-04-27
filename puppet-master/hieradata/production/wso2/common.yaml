@@ -21,7 +21,7 @@ wso2::user : wso2user
 wso2::group : wso2
 wso2::pack_dir : /mnt/packs
 
-# Host mapping to be made in etc/hosts
+# Host mapping to be made in etc/hosts - This is disabled at system.pp L62
 wso2::hosts_mapping :
   localhost :
     ip_address : 127.0.0.1
