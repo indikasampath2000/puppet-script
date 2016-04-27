@@ -34,7 +34,7 @@ This file is ciphertool compliant. Refer PRODUCT_HOME/repository/conf/security/c
         <nodeID>default</nodeID>
 
         <!-- Thrift is used to maintain and sync slot (message groups) ranges between MB nodes. -->
-        <thriftServerHost><%= @hostname %></thriftServerHost>
+        <thriftServerHost><%= @mb_thrift_hostname%></thriftServerHost>
         <thriftServerPort><%= @mb_thrift_port%></thriftServerPort>
         <!--Thrift server reconnect timeout. Value specified in SECONDS-->
         <thriftServerReconnectTimeout>5</thriftServerReconnectTimeout>
