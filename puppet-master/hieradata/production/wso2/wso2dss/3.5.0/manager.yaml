@@ -42,6 +42,13 @@ wso2::clustering :
     #   k8_services : wso2dss-manager,wso2dss-worker
     #   k8_master_username :
     #   k8_master_password :
+    #aws :
+    #   access_key : xxxx
+    #   secret_key : yyyy
+    #   security_group : a_group_name
+    #   region : us-east-1
+    #   tag_key : a_tag_key
+    #   tag_value : a_tag_value
 
 
 wso2::registry_mounts:

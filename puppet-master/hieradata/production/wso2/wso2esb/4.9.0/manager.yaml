@@ -26,7 +26,6 @@ wso2::clustering :
     domain : wso2.esb.domain
     local_member_port : 4000
     membership_scheme : wka
-    #membership_scheme : kubernetes
     sub_domain : mgt
     wka :
        members :

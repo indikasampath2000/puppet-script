@@ -90,6 +90,13 @@ wso2::clustering :
          -
            hostname : 192.168.1.152
            port : 4000
+    #aws :
+    #   access_key : xxxx
+    #   secret_key : yyyy
+    #   security_group : a_group_name
+    #   region : us-east-1
+    #   tag_key : a_tag_key
+    #   tag_value : a_tag_value
 
 wso2::registry_mounts:
   wso2_config_db:
