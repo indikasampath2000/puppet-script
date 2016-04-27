@@ -59,7 +59,7 @@ class wso2base {
 
   $carbon_home        = "${install_dir}/${pack_extracted_dir}"
 
-  if ($wso2_patching_mode == undef or str2bool("$wso2_patching_mode") != true) or ($wso2_upgrade_jdk != undef and str2bool("$wso2_upgrade_jdk") == true) {
+  if ($wso2_patching_mode == undef or str2bool("$wso2_patching_mode") == false) and ($wso2_upgrade_jdk != undef and str2bool("$wso2_upgrade_jdk") == true) {
       class { '::wso2base::system':
         packages          => $packages,
         wso2_group        => $wso2_group,
@@ -86,8 +86,8 @@ class wso2base {
   }
 
   contain wso2base::system
-  # Only install JDK if (wso2_patching_mode=false) or (wso2_patching_mode=true & wso2_upgrade_jdk=true)
-  if ($wso2_patching_mode == undef or str2bool("$wso2_patching_mode") != true) or ($wso2_upgrade_jdk != undef and str2bool("$wso2_upgrade_jdk") == true) {
+  # Only install JDK if (wso2_patching_mode=false) and (wso2_upgrade_jdk=true)
+  if ($wso2_patching_mode == undef or str2bool("$wso2_patching_mode") == false) and ($wso2_upgrade_jdk != undef and str2bool("$wso2_upgrade_jdk") == true) {
       contain wso2base::java
   }
 }
