@@ -22,7 +22,7 @@ wso2::hosts_mapping :
 
 wso2::clustering :
     enabled : true
-    local_member_host : local.dss.wso2.com
+    local_member_host : "%{::ipaddress}"
     domain : wso2.dss.domain
     local_member_port : 5702
     membership_scheme : aws

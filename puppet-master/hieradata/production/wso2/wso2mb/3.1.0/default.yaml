@@ -171,7 +171,7 @@ wso2::master_datasources :
     max_wait : "%{hiera('wso2::datasources::common::max_wait')}"
     test_on_borrow : "%{hiera('wso2::datasources::common::test_on_borrow')}"
     validation_query : "%{hiera('wso2::datasources::mysql::validation_query')}"
-    default_auto_commit : false
+    default_auto_commit : 'false'
     validation_interval : "%{hiera('wso2::datasources::common::validation_interval')}"
 
 # Secure vault configuration
