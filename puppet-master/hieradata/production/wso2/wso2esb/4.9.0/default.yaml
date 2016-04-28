@@ -24,11 +24,16 @@ wso2::mgt_hostname : esb.wso2.com
 wso2::file_list :
   - repository/components/lib/mysql-connector-java-5.1.36-bin.jar
 
-#wso2::template_list :
+wso2::template_list :
+  - repository/conf/jndi.properties
+  - repository/conf/hazelcast.properties
 #  - repository/conf/security/cipher-text.properties
 #  - repository/conf/security/cipher-tool.properties
 #  - bin/ciphertool.sh
 #  - password-tmp
+
+wso2::mb :
+  amqp_url : amqp://admin:admin@carbon/carbon?failover='roundrobin'&cyclecount='2'&brokerlist='tcp://localhost:5672?retries='5'&connectdelay='50';tcp://localhost:5672?retries='5'&connectdelay='50''
 
 wso2::usermgt_datasource: wso2_user_db
 

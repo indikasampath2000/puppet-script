@@ -19,6 +19,7 @@ wso2::pack_extracted_dir: "%{::product_name}-%{::product_version}"
 
 wso2::template_list :
   - repository/conf/etc/tasks-config.xml
+  - repository/conf/hazelcast.properties
 #  - repository/conf/security/cipher-text.properties
 #  - repository/conf/security/cipher-tool.properties
 #  - bin/ciphertool.sh
