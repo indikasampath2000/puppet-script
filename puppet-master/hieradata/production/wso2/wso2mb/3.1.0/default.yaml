@@ -68,7 +68,7 @@ wso2::metrics_datasources :
 
 # Clustered MB setup related values. Uncomment for Clustered setup.
 wso2::file_list :
-  - repository/components/lib/mysql-connector-java-5.1.36-bin.jar
+  - repository/components/lib/mysql-connector-java-5.1.38-bin.jar
 
 # Host mapping to be made in etc/hosts
 wso2::hosts_mapping :

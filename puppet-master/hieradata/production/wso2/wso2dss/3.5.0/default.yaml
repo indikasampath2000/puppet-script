@@ -32,7 +32,7 @@ wso2::mgt_hostname : dss.wso2.com
 wso2::taskServerCount : 1
 
 wso2::file_list :
-  - repository/components/lib/mysql-connector-java-5.1.36-bin.jar
+  - repository/components/lib/mysql-connector-java-5.1.38-bin.jar
 
 wso2::usermgt_datasource: wso2_user_db
 
