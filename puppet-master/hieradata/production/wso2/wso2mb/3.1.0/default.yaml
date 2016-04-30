@@ -160,13 +160,13 @@ wso2::master_datasources :
     validation_query : "%{hiera('wso2::datasources::mysql::validation_query')}"
     validation_interval : "%{hiera('wso2::datasources::common::validation_interval')}"
   mb_msg_db :
-    name : MYSQL_DATA_SOURCE
+    name : WSO2_MB_STORE_DB
     description : The datasource used for message database
     driver_class_name : com.mysql.jdbc.Driver
     url : jdbc:mysql://192.168.1.15:3306/mb_msg_str_db?autoReconnect=true
     username : user
     password : password
-    jndi_config : jdbc/MySQLMessageStore
+    jndi_config : jdbc/MB_STORE_DB
     max_active : "%{hiera('wso2::datasources::common::max_active')}"
     max_wait : "%{hiera('wso2::datasources::common::max_wait')}"
     test_on_borrow : "%{hiera('wso2::datasources::common::test_on_borrow')}"
